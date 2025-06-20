@@ -1,0 +1,36 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
+
+@import "tailwindcss";
+
+
+@layer base {
+  body {
+    font-family: 'Product Sans', sans-serif;
+  }
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+.google-style-datepicker {
+  font-family:  'Product Sans', sans-serif;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #1a73e8;
+  color: white;
+  border-radius: 50%;
+}
+
+
+.dark .toggle-btn svg path {
+fill: white;
+}
+
+input {
+  border: 2px solid #DDE3E9 !important;
+ }
+.dark input , .dark textarea {
+  color: black !important;
+}
